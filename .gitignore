@@ -112,3 +112,17 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Setup Django
+.vscode
+*/migrations/
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+.env
+db.sqlite3
+
+config.py
