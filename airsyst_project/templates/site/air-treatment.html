@@ -1,0 +1,32 @@
+{% extends 'basic_template.html' %}
+{% load static %}
+{% block title %}
+AirSyst - Заказ
+{% endblock %}
+{% block content %}
+<div class="bread-crumbs wrap">
+    <a href="/" class="bread-crumbs__item">Главная</a>
+    <a href="/" class="bread-crumbs__item">Оборудование</a>
+    <div class="bread-crumbs__item">Воздухоподготовка</div>
+</div>
+
+<section class="air wrap">
+    <h1 class="title">
+        Воздухоподготовка
+    </h1>
+    <div class="air__items">
+        <a href="/" class="air__item">
+            <img src="{% static 'airsyst_app/img/images/ORTEKS.jpg' %}" alt="">
+            <h2 class="air__name">
+                Осушители воздуха
+            </h2>
+        </a>
+        <a href="/" class="air__item">
+            <img src="{% static 'airsyst_app/img/images/ORTEKS.jpg' %}" alt="">
+            <h2 class="air__name">
+                Осушители воздуха
+            </h2>
+        </a>
+    </div>
+</section>
+{% endblock %}

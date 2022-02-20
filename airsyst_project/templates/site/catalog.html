@@ -1,0 +1,238 @@
+{% extends 'basic_template.html' %}
+{% load static %}
+{% block title %}
+AirSyst - Каталог
+{% endblock %}
+{% block content %}
+<div class="bread-crumbs wrap">
+    <a href="/" class="bread-crumbs__item">Главная</a>
+    <a href="/" class="bread-crumbs__item">Оборудование</a>
+    <div class="bread-crumbs__item">Компрессоры</div>
+</div>
+
+<section class="catalog wrap">
+    <h1 class="title">
+        Компрессоры
+    </h1>
+    <div class="catalog__content">
+        <div class="filter">
+            <h2 class="filter__title">
+                Фильтр
+            </h2>
+            <div class="filter__checkboxs" name="brands">
+                <h3 class="filter__sub-title">
+                    Бренды
+                </h3>
+                <div class="filter__checkbox" name="Dali">
+                    <div class="filter__check">
+                        <img src="{% static 'airsyst_app/img/icons/check.svg' %}">
+                    </div>
+                    <span>Dali</span>
+                </div>
+                <div class="filter__checkbox" name="Denair">
+                    <div class="filter__check">
+                        <img src="{% static 'airsyst_app/img/icons/check.svg' %}">
+                    </div>
+                    <span>Denair</span>
+                </div>
+                <div class="filter__checkbox" name="Fini">
+                    <div class="filter__check">
+                        <img src="{% static 'airsyst_app/img/icons/check.svg' %}">
+                    </div>
+                    <span>Fini</span>
+                </div>
+            </div>
+            <div class="filter__range">
+                <h3 class="filter__sub-title">
+                    Производительность, л/мин
+                </h3>
+                <div class="filter__inputs">
+                    <input type="text" name="min" placeholder="от (-500)">
+                    <input type="text" name="max" placeholder="до (500)">
+                </div>
+                <!-- 
+                    <div class="range-slider flat" data-ticks-position='top'
+                        style='--min:-500; --max:500; --value-a:-500; --value-b:500; --suffix:""; --text-value-a:"-500"; --text-value-b:"500";'>
+                        <input type="range" min="-500" max="500" value="-500"
+                            oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))">
+                        <output></output>
+                        <input type="range" min="-500" max="500" value="500"
+                            oninput="this.parentNode.style.setProperty('--value-b',this.value); this.parentNode.style.setProperty('--text-value-b', JSON.stringify(this.value))">
+                        <output></output>
+                        <div class='range-slider__progress'></div>
+                    </div>   -->
+                <h3 class="filter__sub-title">
+                    Производительность, л/мин
+                </h3>
+                <div class="filter__inputs">
+                    <input type="text" name="min" placeholder="от (-500)">
+                    <input type="text" name="max" placeholder="до (500)">
+                </div>
+                <!-- 
+                    <div class="range-slider flat" data-ticks-position='top'
+                        style='--min:-500; --max:500; --value-a:-500; --value-b:500; --suffix:""; --text-value-a:"-500"; --text-value-b:"500";'>
+                        <input type="range" min="-500" max="500" value="-500"
+                            oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))">
+                        <output></output>
+                        <input type="range" min="-500" max="500" value="500"
+                            oninput="this.parentNode.style.setProperty('--value-b',this.value); this.parentNode.style.setProperty('--text-value-b', JSON.stringify(this.value))">
+                        <output></output>
+                        <div class='range-slider__progress'></div>
+                    </div> -->
+            </div>
+
+        </div>
+        <div class="catalog__items">
+            <a href="/" class="catalog__item">
+                <img class="catalog__img" src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                <div class="catalog__price">
+                    150 BYN
+                </div>
+                <div class="catalog__delivery">
+                    срок поставки 15 дней
+                </div>
+                <h2 class="catalog__name">
+                    ВОЗДУШНЫЙ ФИЛЬТР
+                </h2>
+                <h3 class="catalog__art">
+                    Артикул: 418496796
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/icons/to-basket.svg' %}" alt="">
+                    В корзину</div>
+            </a>
+            <a href="/" class="catalog__item">
+                <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                <div class="catalog__price">
+                    150 BYN
+                </div>
+                <div class="catalog__delivery">
+                    срок поставки 15 дней
+                </div>
+                <h2 class="catalog__name">
+                    ВОЗДУШНЫЙ ФИЛЬТР
+                </h2>
+                <h3 class="catalog__art">
+                    Артикул: 418496796
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/icons/to-basket.svg' %}" alt="">
+                    В корзину</div>
+            </a>
+            <a href="/" class="catalog__item">
+                <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                <div class="catalog__price">
+                    150 BYN
+                </div>
+                <div class="catalog__delivery">
+                    срок поставки 15 дней
+                </div>
+                <h2 class="catalog__name">
+                    ВОЗДУШНЫЙ ФИЛЬТР
+                </h2>
+                <h3 class="catalog__art">
+                    Артикул: 418496796
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/icons/to-basket.svg' %}" alt="">
+                    В корзину</div>
+            </a>
+            <a href="/" class="catalog__item">
+                <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                <div class="catalog__price">
+                    150 BYN
+                </div>
+                <div class="catalog__delivery">
+                    срок поставки 15 дней
+                </div>
+                <h2 class="catalog__name">
+                    ВОЗДУШНЫЙ ФИЛЬТР
+                </h2>
+                <h3 class="catalog__art">
+                    Артикул: 418496796
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/icons/to-basket.svg' %}" alt="">
+                    В корзину</div>
+            </a>
+            <a href="/" class="catalog__item">
+                <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                <div class="catalog__price">
+                    150 BYN
+                </div>
+                <div class="catalog__delivery">
+                    срок поставки 15 дней
+                </div>
+                <h2 class="catalog__name">
+                    ВОЗДУШНЫЙ ФИЛЬТР
+                </h2>
+                <h3 class="catalog__art">
+                    Артикул: 418496796
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/icons/to-basket.svg' %}" alt="">
+                    В корзину</div>
+            </a>
+            <a href="/" class="catalog__item">
+                <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                <div class="catalog__price">
+                    150 BYN
+                </div>
+                <div class="catalog__delivery">
+                    срок поставки 15 дней
+                </div>
+                <h2 class="catalog__name">
+                    ВОЗДУШНЫЙ ФИЛЬТР
+                </h2>
+                <h3 class="catalog__art">
+                    Артикул: 418496796
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/icons/to-basket.svg' %}" alt="">
+                    В корзину</div>
+            </a>
+        </div>
+        <div class="pagination">
+            <a href="#" class="pagination__start">
+                В начало
+            </a>
+            <a href="#" class="pagination__before">
+                <</a> <div class="pagination__pages">
+                    <a href="#" class="pagination__page active">1,</a>
+                    <a href="#" class="pagination__page">2,</a>
+                    <a href="#" class="pagination__page">3,</a>
+                    <a href="#" class="pagination__page">4,</a>
+                    <a href="#" class="pagination__page">5</a>
+        </div>
+        <a href="#" class="pagination__after">></a>
+        <a href="#" class="pagination__end">
+            В конец
+        </a>
+    </div>
+    </div>
+</section>
+{% endblock %}

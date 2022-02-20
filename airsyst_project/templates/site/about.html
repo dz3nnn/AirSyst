@@ -1,0 +1,72 @@
+{% extends 'basic_template.html' %}
+{% load static %}
+{% block title %}
+AirSyst - О компании
+{% endblock %}
+{% block content %}
+<div class="bread-crumbs wrap">
+    <a href="/" class="bread-crumbs__item">Главная</a>
+    <div class="bread-crumbs__item">О компании</div>
+</div>
+<section class="about wrap">
+    <h1 class="title">
+        О компании
+    </h1>
+    <div class="about__content">
+        <div class="about__text">
+            <h3>
+                <b>ООО "AIRSYST"</b> - коллектив профессионалов! Людей, которые знают компрессорную технику не
+                только по книгам, инструкциям и каталогам, а на практике и путем собственного опыта, изучивших
+                оборудование за
+                годы продаж, обслуживания и ремонтов на предприятиях различных отраслей деятельности.
+                <br><br>
+                В своем развитии Мы во многом обязаны вам, нашим клиентам, которые заинтересовались компрессорами и
+                их установкой для личного и промышленного использования. мы всегда помним для кого мы работаем и
+                добиваемся от производителей наилучших условий в ценообразовании и сервисной политике.
+            </h3>
+            <span>
+                Наша миссия:
+            </span>
+            <h3>
+                Предоставить полный спектр услуг, связанных с подготовкой воздуха, показать максимальный ассортимент
+                мировых производителей в одном каталоге с популярными обзорами, удобной навигацией и разделами
+                помощи. Вектор развития компании направлен на комфорт клиента! А качественный сервис и необходимые
+                консультации это дополнительный бонус.
+            </h3>
+        </div>
+        <img src="{% static 'airsyst_app/img/images/worker.jpg' %}" alt="">
+        <img src="{% static 'airsyst_app/img/icons/about-bg.svg' %}" class="about__bg">
+    </div>
+</section>
+<section class="our-team wrap">
+    <h2 class="title">
+        Наша команда
+    </h2>
+    <div class="our-team__items">
+        <div class="our-team__item">
+            <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
+            <h3 class="our-team__name">
+                Директор
+            </h3>
+        </div>
+        <div class="our-team__item">
+            <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
+            <h3 class="our-team__name">
+                Директор
+            </h3>
+        </div>
+        <div class="our-team__item">
+            <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
+            <h3 class="our-team__name">
+                Директор
+            </h3>
+        </div>
+        <div class="our-team__item">
+            <img src="{% static 'airsyst_app/' %}img/images/director.jpg" alt="">
+            <h3 class="our-team__name">
+                Директор
+            </h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'basic_template.html' %}
+{% load static %}
+{% block title %}
+AirSyst - Наши проекты
+{% endblock %}
+{% block content %}
+<div class="bread-crumbs wrap">
+    <a href="/" class="bread-crumbs__item">Главная</a>
+    <div class="bread-crumbs__item">Отзывы</div>
+</div>
+
+<section class="reviews-page wrap">
+    <h1 class="title">
+        Отзывы
+    </h1>
+    <div class="sort-select">
+        <div class="custom-select">Сортировка: <span> сервис и обслуживание</span></div>
+        <select id="sort">
+            <option value="сервис и обслуживание">сервис и обслуживание</option>
+            <option value="сервис и">сервис и </option>
+            <option value="сервис обслуживание">сервис обслуживание</option>
+            <option value="обслуживание">обслуживание</option>
+        </select>
+    </div>
+    <div class="reviews-page__items">
+        <div class="reviews-page__item">
+            <img class="reviews-page__img" src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="">
+            <div class="reviews-page__content">
+                <img src="{% static 'airsyst_app/img/images/enigma.png' %}" alt="">
+                <h2 class="reviews-page__customer">
+                    ОДО "Энигма"
+                </h2>
+                <h3 class="reviews-page__descr">
+                    2017г. Поставка, монтаж и запуск винтового компрессора DENAIR с частотным преобразователем.
+                </h3>
+                <a href="/" class="btn">Читать отзыв</a>
+            </div>
+        </div>
+        <div class="reviews-page__item">
+            <img class="reviews-page__img" src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="">
+            <div class="reviews-page__content">
+                <img src="{% static 'airsyst_app/img/images/enigma.png' %}" alt="">
+                <h2 class="reviews-page__customer">
+                    ОДО "Энигма"
+                </h2>
+                <h3 class="reviews-page__descr">
+                    2017г. Поставка, монтаж и запуск винтового компрессора DENAIR с частотным преобразователем.
+                </h3>
+                <a href="/" class="btn">Читать отзыв</a>
+            </div>
+        </div>
+        <div class="reviews-page__item">
+            <img class="reviews-page__img" src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="">
+            <div class="reviews-page__content">
+                <img src="{% static 'airsyst_app/img/images/enigma.png' %}" alt="">
+                <h2 class="reviews-page__customer">
+                    ОДО "Энигма"
+                </h2>
+                <h3 class="reviews-page__descr">
+                    2017г. Поставка, монтаж и запуск винтового компрессора DENAIR с частотным преобразователем.
+                </h3>
+                <a href="/" class="btn">Читать отзыв</a>
+            </div>
+        </div>
+        <div class="reviews-page__item">
+            <img class="reviews-page__img" src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="">
+            <div class="reviews-page__content">
+                <img src="{% static 'airsyst_app/img/images/enigma.png' %}" alt="">
+                <h2 class="reviews-page__customer">
+                    ОДО "Энигма"
+                </h2>
+                <h3 class="reviews-page__descr">
+                    2017г. Поставка, монтаж и запуск винтового компрессора DENAIR с частотным преобразователем.
+                </h3>
+                <a href="/" class="btn">Читать отзыв</a>
+            </div>
+        </div>
+        <div class="reviews-page__item">
+            <img class="reviews-page__img" src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="">
+            <div class="reviews-page__content">
+                <img src="{% static 'airsyst_app/img/images/enigma.png' %}" alt="">
+                <h2 class="reviews-page__customer">
+                    ОДО "Энигма"
+                </h2>
+                <h3 class="reviews-page__descr">
+                    2017г. Поставка, монтаж и запуск винтового компрессора DENAIR с частотным преобразователем.
+                </h3>
+                <a href="/" class="btn">Читать отзыв</a>
+            </div>
+        </div>
+    </div>
+    <a href="/" class="btn">Все отзывы</a>
+</section>
+{% endblock %}

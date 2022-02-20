@@ -1,0 +1,147 @@
+{% extends 'basic_template.html' %}
+{% load static %}
+{% block title %}
+AirSyst - Оборудование
+{% endblock %}
+{% block content %}
+<div class="bread-crumbs wrap">
+    <a href="/" class="bread-crumbs__item">Главная</a>
+    <a href="/" class="bread-crumbs__item">Оборудование</a>
+    <div class="bread-crumbs__item">Компрессоры</div>
+</div>
+
+<section class="card wrap">
+    <div class="card__top">
+        <div class="card__sliders">
+            <div class="card__slider-main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card__slider-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'airsyst_app/img/images/catalog-item.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card__info">
+            <h1 class="card__name">
+                ВОЗДУШНЫЙ ФИЛЬТР
+            </h1>
+            <h2 class="card__art">
+                Артикул: 418496796
+            </h2>
+            <div class="card__price-and-delivery">
+                <h3 class="card__price">
+                    <div class="catalog__price">
+                        150 BYN
+                    </div>
+                    <div class="catalog__delivery">
+                        срок поставки 15 дней
+                    </div>
+                </h3>
+                <div class="catalog__count">
+                    <div class="catalog__minus">-</div>
+                    <input id="catalog-count" type="text" value="1">
+                    <div class="catalog__plus">+</div>
+                </div>
+                <a href="/" download="" class="show-certificate">Смотреть Сертификат </a>
+            </div>
+            <div class="card__delivery-and-warranty">
+                <div class="card__delivery">
+                    <img src="{% static 'airsyst_app/img/ssssss' %}icons/delivery.svg" alt="">
+                    Доставка <span>1-2 дня</span>
+                </div>
+                <div class="card__warranty">
+                    <img src="{% static 'airsyst_app/img/ssssss' %}icons/warranty.png" alt="">
+                    Гарантия <span>12 месяцев</span>
+                </div>
+            </div>
+            <div class="btn to-shopping-cart"><img src="{% static 'airsyst_app/img/ssssss' %}icons/to-basket.svg" alt=""> В корзину</div>
+        </div>
+    </div>
+    <div class="card__specifications">
+        <div class="card__thumbs">
+            <div class="card__thumb active">
+                характеристики
+            </div>
+            <div class="card__thumb">
+                Описание
+            </div>
+        </div>
+        <div class="card__items">
+            <div class="card__item active">
+                <div class="card__row">
+                    <h3 class="card__spec-name">
+                        Тип смазки
+                    </h3>
+                    <h3 class="card__value">
+                        Масляный
+                    </h3>
+                </div>
+                <div class="card__row">
+                    <h3 class="card__spec-name">
+                        Страна бренд
+                    </h3>
+                    <h3 class="card__value">
+                        <img src="{% static 'airsyst_app/img/ssssss' %}icons/china.svg" alt="">
+                    </h3>
+                </div>
+                <div class="card__row">
+                    <h3 class="card__spec-name">
+                        Тип смазки
+                    </h3>
+                    <h3 class="card__value">
+                        Масляный
+                    </h3>
+                </div>
+                <div class="card__row">
+                    <h3 class="card__spec-name">
+                        Страна бренд
+                    </h3>
+                    <h3 class="card__value">
+                        <img src="{% static 'airsyst_app/img/ssssss' %}icons/china.svg" alt="">
+                    </h3>
+                </div>
+            </div>
+            <div class="card__item ">
+                <h3 class="card__text">
+                    Винтовые компрессоры с ременной передачей и прямым приводом марки CrossAir (Китай) представляют
+                    собой линейку одних из самых бюджетных винтовых компрессоров на рынке. Однако, узлы и детали для
+                    винтовых компрессоров CrossAir изготавливаются в современных обрабатывающих центрах, благодаря
+                    чему достигается высокий уровень качества при низкой стоимости относительно других
+                    производителей.
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

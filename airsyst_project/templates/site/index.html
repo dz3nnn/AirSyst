@@ -1,0 +1,109 @@
+{% extends "basic_template.html" %}
+{% load static %}
+{% block title %}
+AirSyst - Главная
+{% endblock %}
+
+{% block content %}
+
+<section class="bid wrap">
+    <div class="bid__items">
+        <a href="/" class="bid__item">
+            <div class="bid__preview">
+                <img src="{% static 'airsyst_app/img/images/bid-1.png' %}"
+                    alt="ЗАПЧАСТИ И РАСХОДНЫЕ МАТЕРИАЛЫ ДЛЯ КОМПРЕССОРОВ">
+                <h2 class="bid__name bid__name_first">
+                    ЗАПЧАСТИ И РАСХОДНЫЕ МАТЕРИАЛЫ ДЛЯ КОМПРЕССОРОВ
+                </h2>
+            </div>
+            <div class="bid__company">
+                <div class="bid__company__items">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                </div>
+                <div class="bid__company__items">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="/" class="bid__item">
+            <div class="bid__preview">
+                <img src="{% static 'airsyst_app/img/images/bid-2.png' %}" class="bid__img_right"
+                    alt="СЕРВИС И ОБСЛУЖИВАНИЕ">
+                <h2 class="bid__name">
+                    СЕРВИС И ОБСЛУЖИВАНИЕ
+                </h2>
+            </div>
+            <div class="bid__company">
+                <div class="bid__company__items">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                </div>
+                <div class="bid__company__items">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="/" class="bid__item">
+            <div class="bid__preview">
+                <img src="{% static 'airsyst_app/img/images/bid-3.png' %}" alt="ОБОРУДОВАНИЕ">
+                <h2 class="bid__name">
+                    ОБОРУДОВАНИЕ
+                </h2>
+            </div>
+            <div class="bid__company">
+                <div class="bid__company__items">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                </div>
+                <div class="bid__company__items">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/boge-logo.svg' %}" alt="">
+                    <img src="{% static 'airsyst_app/img/images/atlas-logo.svg' %}" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="reviews wrap">
+    <h2 class="title">
+        Отзывы о нас
+    </h2>
+    <div class="reviews__slider swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide reviews__slide">
+                <img src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="отзыв">
+            </div>
+            <div class="swiper-slide reviews__slide">
+                <img src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="отзыв">
+            </div>
+            <div class="swiper-slide reviews__slide">
+                <img src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="отзыв">
+            </div>
+            <div class="swiper-slide reviews__slide">
+                <img src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="отзыв">
+            </div>
+            <div class="swiper-slide reviews__slide">
+                <img src="{% static 'airsyst_app/img/images/reviews.jpg' %}" alt="отзыв">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <a href="/" class="btn">Смотреть все отзывы</a>
+</section>
+
+{% endblock %}

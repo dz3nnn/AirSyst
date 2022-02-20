@@ -1,0 +1,94 @@
+{% extends 'basic_template.html' %}
+{% load static %}
+{% block title %}
+AirSyst - Контакты
+{% endblock %}
+{% block content %}
+<div class="bread-crumbs wrap">
+    <a href="/" class="bread-crumbs__item">Главная</a>
+    <div class="bread-crumbs__item">Контакты</div>
+</div>
+<div class="contacts-page wrap">
+    <h1 class="title">Контакты</h1>
+    <div class="contacts-page__items">
+        <div class="contacts-page__item">
+            <div class="contacts-page__icons">
+                <img src="{% static 'airsyst_app/img/icons/tel.svg' %}" alt="">
+            </div>
+            <div class="contacts-page__data">
+                <div class="contacts-page__data__item">
+                    <h3>
+                        Отдел продаж:
+                    </h3>
+                    <a href="tel:" target="_blank" class="tel">
+                        +375 (29) 345 67 89
+                    </a>
+                    <a href="tel:" target="_blank" class="tel">
+                        +375 (29) 345 67 89
+                    </a>
+                </div>
+                <div class="contacts-page__data__item">
+                    <h3>
+                        Сервисный центр:
+                    </h3>
+                    <a href="tel:" target="_blank" class="tel">
+                        +375 (29) 345 67 89
+                    </a>
+                    <a href="tel:" target="_blank" class="tel">
+                        +375 (29) 345 67 89
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-page__item">
+            <div class="contacts-page__icons">
+                <img src="{% static 'airsyst_app/img/icons/mail.svg' %}">
+                <img src="{% static 'airsyst_app/img/icons/vk.svg' %}">
+                <img src="{% static 'airsyst_app/img/icons/time.svg' %}">
+            </div>
+            <div class="contacts-page__data">
+                <div class="contacts-page__data__item">
+                    <a class="link" href="mailto:info@airsist.ru">
+                        info@airsist.ru
+                    </a>
+                </div>
+                <div class="contacts-page__data__item">
+                    <a class="link" href="vk.com/">
+                        vk.com/id1
+                    </a>
+                </div>
+                <div class="contacts-page__data__item">
+                    <div class="time-work__items">
+                        <div class="time-work__item">
+                            <span>Пн-Вт:</span> 9:00-18:00
+                        </div>
+                        <div class="time-work__item">
+                            <span>Сб-Вс:</span> Выходной
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-page__item">
+            <div class="contacts-page__icons">
+                <img src="{% static 'airsyst_app/img/icons/location.svg' %}" alt="">
+            </div>
+            <div class="contacts-page__data">
+                <div class="contacts-page__data__item">
+                    <h3>Офис:</h3>
+                    <h4>г. Минск, ул. Тростенецкая, 6к2</h4>
+                </div>
+                <div class="contacts-page__data__item">
+                    <h3>Сервис:</h3>
+                    <h4>г. Минск, ул. Тростенецкая, 6к2</h4>
+                </div>
+                <div class="contacts-page__data__item">
+                    <h3>Склад:</h3>
+                    <h4>г. Минск, ул. Тростенецкая, 6к2</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/" download="download" class="btn">Скачать “Реквизиты.pdf”</a>
+</div>
+{% endblock %}

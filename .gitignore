@@ -126,3 +126,5 @@ local_settings.py
 db.sqlite3
 
 config.py
+
+.DS_Store
