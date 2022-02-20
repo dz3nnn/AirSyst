@@ -115,7 +115,7 @@ dmypy.json
 
 # Setup Django
 .vscode
-*/migrations/
+migrations
 *.log
 *.pot
 *.pyc
