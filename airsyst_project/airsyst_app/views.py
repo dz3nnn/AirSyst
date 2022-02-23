@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 
 # Site views
 
@@ -6,6 +7,7 @@ from django.shortcuts import render
 def index(request):
     """ Index page view """
     context = {}
+    # messages.add_message(request, messages.DEBUG, 'check')
     return render(request, 'site/index.html', context)
 
 
@@ -92,10 +94,12 @@ def spare_parts_next(request):
     context = {}
     return render(request, 'site/spare-parts-next.html', context)
 
+
 def spare_parts_single(request):
     """ ?? """
     context = {}
     return render(request, 'site/spare-parts-singl.html', context)
+
 
 def spare_parts(request):
     """ ?? """

@@ -17,6 +17,14 @@
     </title>
 </head>
 
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+</ul>
+{% endif %}
+
 <body>
     <header class="header">
         <div class="wrap">
@@ -82,7 +90,7 @@
                 <a href="/certificates/" class="nav__item">Сертификаты</a>
                 <a href="/contacts/" class="nav__item">Контакты</a>
             </div>
-            <a href="/" class="shopping-cart" attr-count="2">
+            <a href="/cart/" class="shopping-cart" attr-count="2">
                 <img src="{% static 'airsyst_app/img/icons/shopping card.png' %}" alt="">
             </a>
         </div>
@@ -170,7 +178,7 @@
                 <img src="{% static 'airsyst_app/img/icons/close.svg' %}" alt="">
             </div>
             <div class="team-form__content">
-                <img src="{% static 'airsyst_app/img/icons/director.svg' %}" alt="">
+                <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
                 <div class="team-form__text">
                     <div class="team-form__spec">
                         СПЕЦИАЛИСТ ПО БЕЗМАСЛЯННЫМ КОМПРЕССОРАМ
