@@ -1,73 +1,22 @@
 {% extends 'basic_template.html' %}
 {% load static %}
-{% block title %}
-AirSyst - Оборудование
-{% endblock %}
+{% block title %}AirSyst - Оборудование{% endblock %}
 {% block content %}
 <div class="bread-crumbs wrap">
     <a href="/" class="bread-crumbs__item">Главная</a>
     <div class="bread-crumbs__item">Оборудование</div>
 </div>
-
 <section class="equipment wrap">
-    <h1 class="title">
-        Оборудование
-    </h1>
+    <h1 class="title">Оборудование</h1>
+    {% if categories %}
     <div class="equipment__items">
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
+        {% for category in categories %}
+        <a href="{% url 'equipment_by_category' category.pk %}" class="equipment__item">
+            <img src="{{ category.image.url }}" alt="">
+            <h2 class="equipment__name">{{ category.name }}</h2>
         </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
-        <a href="/air_treatment/" class="equipment__item">
-            <img src="{% static 'airsyst_app/img/images/podbor.jpg' %}" alt="">
-            <h2 class="equipment__name">
-                Компрессоры
-            </h2>
-        </a>
+        {% endfor %}
     </div>
+    {% endif %}
 </section>
 {% endblock %}

@@ -1,17 +1,13 @@
 {% extends 'basic_template.html' %}
 {% load static %}
-{% block title %}
-AirSyst - О компании
-{% endblock %}
+{% block title %}AirSyst - О компании{% endblock %}
 {% block content %}
 <div class="bread-crumbs wrap">
     <a href="/" class="bread-crumbs__item">Главная</a>
     <div class="bread-crumbs__item">О компании</div>
 </div>
 <section class="about wrap">
-    <h1 class="title">
-        О компании
-    </h1>
+    <h1 class="title">О компании</h1>
     <div class="about__content">
         <div class="about__text">
             <h3>
@@ -19,14 +15,13 @@ AirSyst - О компании
                 только по книгам, инструкциям и каталогам, а на практике и путем собственного опыта, изучивших
                 оборудование за
                 годы продаж, обслуживания и ремонтов на предприятиях различных отраслей деятельности.
-                <br><br>
+                <br>
+                <br>
                 В своем развитии Мы во многом обязаны вам, нашим клиентам, которые заинтересовались компрессорами и
                 их установкой для личного и промышленного использования. мы всегда помним для кого мы работаем и
                 добиваемся от производителей наилучших условий в ценообразовании и сервисной политике.
             </h3>
-            <span>
-                Наша миссия:
-            </span>
+            <span>Наша миссия:</span>
             <h3>
                 Предоставить полный спектр услуг, связанных с подготовкой воздуха, показать максимальный ассортимент
                 мировых производителей в одном каталоге с популярными обзорами, удобной навигацией и разделами
@@ -39,34 +34,80 @@ AirSyst - О компании
     </div>
 </section>
 <section class="our-team wrap">
-    <h2 class="title">
-        Наша команда
-    </h2>
+    <h2 class="title">Наша команда</h2>
     <div class="our-team__items">
         <div class="our-team__item">
             <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
-            <h3 class="our-team__name">
-                Директор
-            </h3>
+            <h3 class="our-team__name">Директор</h3>
         </div>
         <div class="our-team__item">
             <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
-            <h3 class="our-team__name">
-                Директор
-            </h3>
+            <h3 class="our-team__name">Директор</h3>
         </div>
         <div class="our-team__item">
             <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
-            <h3 class="our-team__name">
-                Директор
-            </h3>
+            <h3 class="our-team__name">Директор</h3>
         </div>
         <div class="our-team__item">
             <img src="{% static 'airsyst_app/' %}img/images/director.jpg" alt="">
-            <h3 class="our-team__name">
-                Директор
-            </h3>
+            <h3 class="our-team__name">Директор</h3>
         </div>
     </div>
 </section>
+{% endblock %}
+
+{% block in_div_modal %}
+<div class="team-form">
+    <div class="close">
+        <img src="{% static 'airsyst_app/img/icons/close.svg' %}" alt="">
+    </div>
+    <div class="team-form__content">
+        <img src="{% static 'airsyst_app/img/images/director.jpg' %}" alt="">
+        <div class="team-form__text">
+            <div class="team-form__spec">
+                СПЕЦИАЛИСТ ПО БЕЗМАСЛЯННЫМ КОМПРЕССОРАМ
+            </div>
+            <div class="team-form__name">
+                Сердар Гексель Шен (гражданин Турции) 34 года.
+            </div>
+            <div class="team-form__descr">
+                <span>Опыт работы более 16 лет. Инженер во 2-м поколении.</span>
+                Ремонтом компрессоров занимается с 18 лет. С 2005 по 2013 год работал в компании Селмак
+                Компрессор лтд. (Стамбул, Турция). Компания была официальным дилером Sullair и Ingersoll Rand в
+                Турции. Основная
+                специализация капитальные ремонты винтовых блоков и ступеней сжатия винтовых компрессоров.
+                <br>
+                <span>С 2013 по 2017</span> работал в официальном дилере Atlas
+                Copco. Основная специализация обслуживание и ремонт винтовых безмаслянных и центробежных
+                компрессоров.
+                <br>
+                <span>С 2017 по 2020</span> год работал в Air Energy Compressed Air Specialists Ltd., Дублин
+                Ирландия.
+                Компания является
+                дилером Ingersoll Rand. Основная специализация капитальный ремонт и обслуживание безмаслянных
+                винновых и центробежных компрессоров Ingersoll Rand и Atlas Copco.
+                <br>
+                <span>С 2021</span> года работает в группе компаний ООО “КОМПРЕССОР-МАШ” и ООО “Мой
+                компрессор” руководителем
+                сервисной службы на территории Республики Беларусь и Российской федерации. Практикующий тренер.
+                <br>
+                <br>
+                <span>Реализованные проекты:</span>
+                <br>
+                Европейский Союз:
+                - TECOMET HEALTH ZT37; ZT55 (замена сервисных наборов 16000; 40000)
+                - GILLEAD BLOOD FILTERS ZR75; ZR90 (замена сервисных наборов 4000; 8000; 16000)
+                - CADBURYS CHOCLATE ZR90VSD; ZR110VSD; COMPAIR D90 (замена сервисных
+                <br>
+                <br>
+                <span>Реализованные проекты:</span>
+                <br>
+                Европейский Союз:
+                - TECOMET HEALTH ZT37; ZT55 (замена сервисных наборов 16000; 40000)
+                - GILLEAD BLOOD FILTERS ZR75; ZR90 (замена сервисных наборов 4000; 8000; 16000)
+                - CADBURYS CHOCLATE ZR90VSD; ZR110VSD; COMPAIR D90 (замена сервисных
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

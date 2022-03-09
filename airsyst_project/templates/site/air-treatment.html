@@ -1,32 +1,23 @@
 {% extends 'basic_template.html' %}
 {% load static %}
-{% block title %}
-AirSyst - Заказ
-{% endblock %}
+{% block title %}AirSyst - {{ current_category.name }}{% endblock %}
 {% block content %}
 <div class="bread-crumbs wrap">
     <a href="/" class="bread-crumbs__item">Главная</a>
-    <a href="/" class="bread-crumbs__item">Оборудование</a>
-    <div class="bread-crumbs__item">Воздухоподготовка</div>
+    <a href="{% url 'equipment' %}" class="bread-crumbs__item">Оборудование</a>
+    <div class="bread-crumbs__item">{{ current_category.name }}</div>
 </div>
-
 <section class="air wrap">
-    <h1 class="title">
-        Воздухоподготовка
-    </h1>
+    <h1 class="title">{{ current_category.name }}</h1>
+    {% if sub_categories %}
     <div class="air__items">
-        <a href="/catalog/" class="air__item">
-            <img src="{% static 'airsyst_app/img/images/ORTEKS.jpg' %}" alt="">
-            <h2 class="air__name">
-                Осушители воздуха
-            </h2>
+        {% for sub_category in sub_categories %}
+        <a href="{% url 'equipment_catalog_by_sub_category' sub_category.pk %}" class="air__item">
+            <img src="{{ sub_category.image.url }}" alt="">
+            <h2 class="air__name">{{ sub_category.name }}</h2>
         </a>
-        <a href="/catalog/" class="air__item">
-            <img src="{% static 'airsyst_app/img/images/ORTEKS.jpg' %}" alt="">
-            <h2 class="air__name">
-                Осушители воздуха
-            </h2>
-        </a>
+        {% endfor %}
     </div>
+    {% endif %}
 </section>
 {% endblock %}

@@ -1,77 +1,46 @@
 {% extends 'basic_template.html' %}
 {% load static %}
-{% block title %}
-AirSyst - Оборудование
-{% endblock %}
+{% load app_tags %}
+{% block title %}AirSyst - {{ project.company.name }}{% endblock %}
 {% block content %}
 <div class="bread-crumbs wrap">
     <a href="/" class="bread-crumbs__item">Главная</a>
-    <a href="/" class="bread-crumbs__item">Наши проекты</a>
-    <div class="bread-crumbs__item">Гроднохлебпром</div>
+    <a href="{% url 'projects' %}" class="bread-crumbs__item">Наши проекты</a>
+    <div class="bread-crumbs__item">{{ project.company.name }}</div>
 </div>
 <div class="project wrap">
-    <h1 class="title">
-        Наши проекты
-    </h1>
+    <h1 class="title">Наши проекты</h1>
     <div class="projects__date">
-        <div class="projects__day">
-            20
-        </div>
+        <div class="projects__day">{{ project.date|get_day }}</div>
         <div class="project__small-date">
-            <div class="projects__month">
-                июня
-            </div>
-            <div class="projects__year">
-                2021
-            </div>
+            <div class="projects__month">{{ project.date|get_month }}</div>
+            <div class="projects__year">{{ project.date|get_year }}</div>
         </div>
     </div>
-    <h3 class="projects__customer">
-        ОАО “ГРОДНОХЛЕБПРОМ”
-    </h3>
-    <h3 class="projects__name">
-        Ремонт и восстановление безмасляного винтового компрессора REMEZA BK-60-2.5/O на 45кВт
-    </h3>
+    <h3 class="projects__customer">{{ project.company.name }}</h3>
+    <h3 class="projects__name">{{ project.title }} </h3>
     <h4 class="projects__descr">
-        <span>Были выполнены работы:</span>
-        <br>Капитальный ремонт безмасляного компрессорного блока GHH-RAND CS80R/1
-        <br>Замена подшипников и лабиринтных уплотнений
-        <br>Замена втулки
-        <br>Проверка и регулировка соосности винтов (ведущего и ведомого)
-        <br>Регулировка зазоров винтовой пары
-        <br>Непрерывные испытания в течение 24 часов
-        <br>
-        <br><span>Капитальный ремонт электродвигателя SIEMENS 1LG4223-2AA60-Z</span>
-        <br>Замена подшипников и смазки
-        <br>Восстановление крышки корпуса...
-
+        {{ project.description }}
     </h4>
-
-    <h4 class="projects__descr">
+    {% comment %} <h4 class="projects__descr">
         Производственное объединение «Гроднохлебпром» образовано в 1972г. В его состав вошли хлебозаводы в городе
         Гродно, Волковыске, Лиде, Новогрудке и Слониме, а в 1994 году в Сморгони. Каждое предприятие имеет свою
         историю и, объединившись, является на данный момент одним из крупнейших производителей хлебобулочных и
         кондитерских изделий в Республике Беларусь. Ежесуточное производство хлебобулочных изделий составляет 100
         тонн, кондитерских изделий- 4 тонны.
-    </h4>
+    </h4> {% endcomment %}
 </div>
-
+{% if images %}
 <div class="project__slider swiper wrap">
     <div class="swiper-wrapper">
+        {% for image_model in images %}
         <div class="swiper-slide project__slide">
-            <img src="{% static 'airsyst_app/img/images/worker.jpg' %}" alt="">
+            <img src="{{ image_model.image.url }}" alt="">
         </div>
-        <div class="swiper-slide project__slide">
-            <img src="{% static 'airsyst_app/img/images/worker.jpg' %}" alt="">
-        </div>
-        <div class="swiper-slide project__slide">
-            <img src="{% static 'airsyst_app/img/images/worker.jpg' %}" alt="">
-        </div>
-        <div class="swiper-slide project__slide">
-            <img src="{% static 'airsyst_app/img/images/worker.jpg' %}" alt="">
-        </div>
+        {% endfor %}
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
+{% endif %}
 {% endblock %}

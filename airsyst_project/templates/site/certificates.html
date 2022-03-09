@@ -1,48 +1,48 @@
 {% extends 'basic_template.html' %}
 {% load static %}
-{% block title %}
-AirSyst - Сертификаты
-{% endblock %}
+{% block title %}AirSyst - Сертификаты{% endblock %}
 {% block content %}
-<div class="bread-crumbs wrap">
-    <a href="/" class="bread-crumbs__item">Главная</a>
-    <div class="bread-crumbs__item">Сертификаты</div>
-</div>
-<section class="certificates wrap">
-    <h1 class="title">
-        Сертификаты
-    </h1>
-    <h3 class="certificates__descr">
-        Наша компания имеет статус официального дилера. Этот факт гарантирует наличие квалифицированной выездной
-        технической поддержки и сервисного центра, выполнение гарантийного и послегарантийного обслуживания. Прямые
-        контракты с заводами производителями подтверждают качество, легальность и минимальную стоимость продукта.
-    </h3>
-
-    <div class="certificates__slider swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide certificates__slide">
-                <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}" alt="сертификат">
-                <div class="certificates__name">Fini (Италия)</div>
-            </div>
-            <div class="swiper-slide certificates__slide">
-                <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}" alt="сертификат">
-                <div class="certificates__name">Fini (Италия)</div>
-            </div>
-            <div class="swiper-slide certificates__slide">
-                <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}" alt="сертификат">
-                <div class="certificates__name">Fini (Италия)</div>
-            </div>
-            <div class="swiper-slide certificates__slide">
-                <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}" alt="сертификат">
-                <div class="certificates__name">Fini (Италия)</div>
-            </div>
-            <div class="swiper-slide certificates__slide">
-                <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}" alt="сертификат">
-                <div class="certificates__name">Fini (Италия)</div>
-            </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+    <div class="bread-crumbs wrap">
+        <a href="/" class="bread-crumbs__item">Главная</a>
+        <div class="bread-crumbs__item">Сертификаты</div>
     </div>
-</section>
+    <section class="certificates wrap">
+        <h1 class="title">Сертификаты</h1>
+        <h3 class="certificates__descr">
+            Наша компания имеет статус официального дилера. Этот факт гарантирует наличие квалифицированной выездной
+            технической поддержки и сервисного центра, выполнение гарантийного и послегарантийного обслуживания. Прямые
+            контракты с заводами производителями подтверждают качество, легальность и минимальную стоимость продукта.
+        </h3>
+        <div class="certificates__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide certificates__slide">
+                    <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}"
+                         alt="сертификат">
+                    <div class="certificates__name">Fini (Италия)</div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                    <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}"
+                         alt="сертификат">
+                    <div class="certificates__name">Fini (Италия)</div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                    <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}"
+                         alt="сертификат">
+                    <div class="certificates__name">Fini (Италия)</div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                    <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}"
+                         alt="сертификат">
+                    <div class="certificates__name">Fini (Италия)</div>
+                </div>
+                <div class="swiper-slide certificates__slide">
+                    <img src="{% static 'airsyst_app/img/images/certificates.jpg' %}"
+                         alt="сертификат">
+                    <div class="certificates__name">Fini (Италия)</div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
 {% endblock %}

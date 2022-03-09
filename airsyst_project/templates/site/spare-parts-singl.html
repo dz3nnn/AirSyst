@@ -1,62 +1,46 @@
 {% extends 'basic_template.html' %}
 {% load static %}
-{% block title %}
-AirSyst - Заказ
-{% endblock %}
+{% block title %}AirSyst - Заказ{% endblock %}
 {% block content %}
-<div class="bread-crumbs wrap">
-    <a href="/" class="bread-crumbs__item">Главная</a>
-    <div class="bread-crumbs__item">Винтовой блок</div>
-</div>
-
-<section class="parts wrap">
-    <h1 class="title">
-        Запчасти для компрессоров
-    </h1>
-    <h3 class="parts__text">
-        Группа компаний под общим брендом AIRSYST, работает на рынках России, Беларуси, Евросоюза и Ирландии более
-        10 лет. За эти годы мы накопили колоссальный опыт по подбору оборудования, проведению капитальных ремонтов
-        компрессорной техники различных производителей и продажи запасных частей и расходных материалов.
-        <br><br> Более 5 000 наименований запасных частей и расходных материалов, для компрессорной техники находятся на
-        наших складах в Москве, Минске, Таллине и Дублине. На наших складах постоянно в наличии воздушные и масляные
-        фильтры; сепараторы; клапаны минимального давления (MPVL); маслозапорные клапана, впускные клапана;
-        разгрузочные клапана; термостаты; ремонтные комплекты, сальники и втулки, подшипники. Если какой-то позиции
-        нет в наличии, мы осуществим поставку в самые короткие сроки.
-        <br><br> Мы предлагаем запчасти и фильтры к компрессорам Atlas Copco, Hanwha Group, Ingersoll Rand, Compair,
-        BOGE,
-        Kaeser, Ceccato, Gardner Denver, Dalgakiran, HERTZ, ECOMAK Almig, Alup и многих других.
-        <br><br> Если Вашему компрессору требуется замена винтового блока, за 10-15 мы привезем и установим новый или
-        восстановленный блок с гарантией 1 год. А для сокращения ваших расходов, можем взять ваш элемент сжатия в
-        зачет.
-        <br><br> <span>Позвоните нашим специалистам или оставьте заявку ниже, и мы сделаем отличное предложение для
-            Вашей компании.</span>
-
-    </h3>
-    <div class="parts__imgs">
-        <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
-        <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
-        <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
-        <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
-        <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
+    <div class="bread-crumbs wrap">
+        <a href="/" class="bread-crumbs__item">Главная</a>
+        <div class="bread-crumbs__item">Винтовой блок</div>
     </div>
-</section>
-
-
-<section class="feedback wrap">
-    <form>
-        <h2 class="feedback__title">
-            Обратная связь
-        </h2>
-        <input type="text" name="" placeholder="Имя">
-        <input type="text" name="" placeholder="Email">
-        <textarea name="" placeholder="Ваше сообщение"></textarea>
-        <div class="feedback__checkbox">
-            <div class="feedback__check">
-                <img src="{% static 'airsyst_app/img/icons/check.svg' %}">
-            </div>
-            <span>Я принимаю условия политики конфиденциальности</span>
+    <section class="parts wrap">
+        <h1 class="title">Запчасти для компрессоров</h1>
+        <h3 class="parts__text">
+            Группа компаний под общим брендом AIRSYST, работает на рынках России, Беларуси, Евросоюза и Ирландии более
+            10 лет. За эти годы мы накопили колоссальный опыт по подбору оборудования, проведению капитальных ремонтов
+            компрессорной техники различных производителей и продажи запасных частей и расходных материалов.
+            <br>
+            <br>
+            Более 5 000 наименований запасных частей и расходных материалов, для компрессорной техники находятся на
+            наших складах в Москве, Минске, Таллине и Дублине. На наших складах постоянно в наличии воздушные и масляные
+            фильтры; сепараторы; клапаны минимального давления (MPVL); маслозапорные клапана, впускные клапана;
+            разгрузочные клапана; термостаты; ремонтные комплекты, сальники и втулки, подшипники. Если какой-то позиции
+            нет в наличии, мы осуществим поставку в самые короткие сроки.
+            <br>
+            <br>
+            Мы предлагаем запчасти и фильтры к компрессорам Atlas Copco, Hanwha Group, Ingersoll Rand, Compair,
+            BOGE,
+            Kaeser, Ceccato, Gardner Denver, Dalgakiran, HERTZ, ECOMAK Almig, Alup и многих других.
+            <br>
+            <br>
+            Если Вашему компрессору требуется замена винтового блока, за 10-15 мы привезем и установим новый или
+            восстановленный блок с гарантией 1 год. А для сокращения ваших расходов, можем взять ваш элемент сжатия в
+            зачет.
+            <br>
+            <br>
+            <span>Позвоните нашим специалистам или оставьте заявку ниже, и мы сделаем отличное предложение для
+            Вашей компании.</span>
+        </h3>
+        <div class="parts__imgs">
+            <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
+            <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
+            <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
+            <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
+            <img src="{% static 'airsyst_app/img/images/parts.jpg' %}" alt="">
         </div>
-        <input type="submit" value="Отправить" class="btn">
-    </form>
-</section>
+    </section>
+    {% include "parts/feedback.html" %}
 {% endblock %}

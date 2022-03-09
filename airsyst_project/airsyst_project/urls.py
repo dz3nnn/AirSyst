@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import handler404, handler500
 
 
 urlpatterns = [
+    # path('admin/filebrowser/', admin.site.urls),
+    # path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
-    path('', include('airsyst_app.urls'))
+    path('', include('airsyst_app.urls')),
+    path('tinymce/', include('tinymce.urls')),
+    # path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
+
+handler404 = 'airsyst_app.views.view_404'
